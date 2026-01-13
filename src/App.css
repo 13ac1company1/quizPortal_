@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+/* App.css — portal page styling, reusing the QuizApp visual language */
+
+.app-card{
+  padding: 28px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header{
+  text-align:center;
+  margin-bottom: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:16px;
+  margin: 10px 0 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-tile{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  padding:18px;
+  border-radius: 18px;
+  border:1px solid rgba(2,6,23,.08);
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 10px 26px rgba(2,6,23,.1);
+  text-align:left;
+  cursor:pointer;
+  transition: transform .14s ease, box-shadow .14s ease, background .14s ease, border-color .14s ease;
+}
+.app-tile:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(2,6,23,.14);
+  border-color: rgba(79,70,229,.25);
+  background: rgba(255,255,255,.95);
 }
 
-.App-link {
-  color: #61dafb;
+.app-tile-icon{
+  width:48px; height:48px; display:grid; place-items:center;
+  border-radius: 14px;
+  background: linear-gradient(135deg,#4f46e5,#06b6d4);
+  color:#fff; font-size:1.35rem;
+  box-shadow: 0 10px 22px rgba(79,70,229,.35);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-tile-title{
+  font-weight: 900;
+  font-size: 1.15rem;
+  color:#0b1220;
 }
+.app-tile-sub{
+  color:#64748b;
+  font-size:.95rem;
+}
+
+.app-tip{
+  color:#64748b; font-size:.95rem;
+}
+
+.center{ text-align:center; }
+
+/* Small refinement: when leaving portal, the back bar sits above content */
+.qa-row{ margin-bottom: 0; }
+
+/* Each quiz item becomes a positioning context so the keyboard can anchor under it */
+.sp-item-rel{
+  position: relative;
+}
+
+/* Popup keyboard */
+.sp-kb-pop{
+  position: absolute;
+  left: 40px;                 /* aligns under the input (tweak if needed) */
+  top: calc(100% + 8px);      /* just below the input row */
+  z-index: 30;
+  filter: drop-shadow(0 10px 24px rgba(2,6,23,.18));
+}
+
+.sp-kb-arrow{
+  width: 0; height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgba(255,255,255,.98);
+  margin-left: 16px;
+  transform: translateY(1px);
+}
+
+.sp-kb-inner{
+  background: rgba(255,255,255,.98);
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 14px;
+  padding: 8px;
+}
+
+.sp-kb-row{
+  display:flex;
+  gap:6px;
+  justify-content:center;
+  margin: 4px 0;
+}
+
+.sp-kb-key{
+  min-width: 34px;
+  padding: 10px 12px;
+  font-weight: 900;
+  text-transform: none;
+}
+
+.sp-kb-back{
+  min-width: 56px;
+}
+
+.sp-kb-shift.active{
+  background: linear-gradient(135deg,#4f46e5,#06b6d4);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(79,70,229,.35);
+}
+

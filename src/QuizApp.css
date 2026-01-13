@@ -1,0 +1,253 @@
+/* =========================================================
+   QuizApp.css — Global Neon/Spray + Background Confetti
+   ========================================================= */
+
+:root{
+  --base: clamp(18px, 2.6vw, 22px);
+  --h1: clamp(36px, 7vw, 50px);
+  --h2: clamp(28px, 5.4vw, 38px);
+  --h3: clamp(24px, 4.2vw, 30px);
+  --btn: clamp(18px, 3.4vw, 22px);
+  --chip: clamp(16px, 2.8vw, 18px);
+  --menu-font: xx-large;   /* portal + menus */
+  --quiz-font: x-large;    /* quizzes */
+
+  --ink: #0b1020;
+  --muted: #475569;
+
+  --grad-1: linear-gradient(135deg, #ffedd5 0%, #fef3c7 40%, #e0f2fe 100%);
+  --grad-indigo: linear-gradient(180deg, #4f46e5, #1d4ed8);
+  --grad-neutral: linear-gradient(180deg, #111827, #1f2937);
+  --grad-danger: linear-gradient(180deg, #dc2626, #b91c1c);
+  --grad-success: linear-gradient(180deg, #16a34a, #15803d);
+
+  --neon-indigo: #7c83ff;
+  --neon-pink:   #ff5bb3;
+  --neon-cyan:   #61e8ff;
+  --neon-lime:   #7aff9a;
+
+  --ring-right: #10b98166;
+  --ring-wrong: #ef444466;
+
+  --spray-mix: .85;
+}
+
+html, body { font-size: var(--base); }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 700px at 50% -10%, #dbeafe 0%, #f0f9ff 60%, #ffffff 100%),
+    /* Subtle confetti paper texture */
+    radial-gradient(2px 2px at 8% 20%, rgba(0,0,0,.035), transparent 60%),
+    radial-gradient(3px 3px at 35% 40%, rgba(0,0,0,.03), transparent 60%),
+    radial-gradient(2px 2px at 70% 60%, rgba(0,0,0,.03), transparent 60%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animated Aurora + twinkle layer for ALL screens */
+body:before{
+  content:"";
+  position: fixed; inset: -10%;
+  z-index: -2;
+  background:
+    radial-gradient(60% 40% at 80% 10%, rgba(99,102,241,.20), transparent 60%),
+    radial-gradient(50% 35% at 10% 0%, rgba(16,185,129,.18), transparent 60%),
+    radial-gradient(60% 40% at 90% 90%, rgba(59,130,246,.20), transparent 60%);
+  filter: blur(30px);
+  animation: floatAurora 16s ease-in-out infinite alternate;
+}
+body:after{
+  content:"";
+  position: fixed; inset: 0;
+  z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(2px 2px at 10% 20%, rgba(0,0,0,.08), transparent 60%),
+    radial-gradient(3px 3px at 35% 40%, rgba(0,0,0,.06), transparent 60%),
+    radial-gradient(2px 2px at 70% 60%, rgba(0,0,0,.06), transparent 60%),
+    radial-gradient(3px 3px at 85% 25%, rgba(0,0,0,.08), transparent 60%),
+    radial-gradient(2px 2px at 55% 80%, rgba(0,0,0,.06), transparent 60%);
+  opacity:.35;
+  animation: driftDots 18s linear infinite;
+}
+
+/* Confetti canvas (from confetti.js) sits on top when active */
+.confetti-canvas { mix-blend-mode: normal; }
+
+/* Layout wrappers reused by the app */
+.qa-container { min-height: 100vh; padding: 18px; }
+.qa-inner { max-width: 1160px; margin: 0 auto; }
+
+.qa-title { font-size: var(--h1); font-weight: 1000; letter-spacing: -0.02em; margin: 0; }
+.qa-h2    { font-size: var(--h2); font-weight: 900; margin: 0 0 10px; }
+.qa-h3    { font-size: var(--h3); font-weight: 900; margin: 0 0 6px; }
+.qa-subtitle { color: var(--muted); margin: 8px 0 12px; }
+
+.menu-area, .portal-wrap, .print-center, .print-center-controls { font-size: var(--menu-font); }
+.quiz-area, .quiz-form, .qa-opts, .qa-bar, .qa-review { font-size: var(--quiz-font); }
+
+.graffiti {
+  position: relative;
+  color: #fff;
+  text-shadow:
+    0 0 6px var(--neon-cyan),
+    0 0 14px var(--neon-indigo),
+    0 0 26px var(--neon-pink);
+}
+.neon-pulse { animation: neonPulse 2.3s ease-in-out infinite; }
+
+/* Cards & groups */
+.qa-card {
+  background: #ffffffcc; backdrop-filter: blur(8px);
+  border: 1px solid #e2e8f0; border-radius: 24px;
+  box-shadow: 0 18px 44px rgba(2, 8, 20, 0.12);
+  padding: 18px;
+}
+.qa-card-head { display:flex; align-items:center; justify-content:space-between; gap: 12px; }
+.qa-stack > * + * { margin-top: 16px; }
+.qa-actions { display:flex; align-items:center; gap: 12px; flex-wrap: wrap; }
+.qa-flex    { display:flex; align-items:center; justify-content:space-between; gap: 12px; }
+
+.btn {
+  font-size: var(--btn); font-weight: 1000;
+  padding: 16px 22px; border-radius: 18px; border: none;
+  cursor: pointer; position: relative; overflow: hidden;
+  transition: transform .06s ease, filter .2s ease, box-shadow .2s ease;
+  will-change: transform;
+}
+.btn:active { transform: translateY(1px) scale(0.985); }
+
+.btn-ghost   { background: #e2e8f0; color: var(--ink); }
+.btn-neutral { background: var(--grad-neutral); color: #fff; }
+.btn-primary {
+  background: var(--grad-indigo); color: #fff;
+  box-shadow: 0 14px 26px rgba(29,78,216,.25);
+}
+.btn-danger  { background: var(--grad-danger); color:#fff; }
+.btn-success { background: var(--grad-success); color:#fff; }
+
+.btn-shimmer:before {
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
+  transform: translateX(-120%); animation: shimmer 2.6s ease-in-out infinite;
+}
+
+.chip-wrap { display:flex; flex-wrap:wrap; gap: 10px; }
+.chip {
+  font-size: var(--chip); font-weight: 900; padding: 10px 14px;
+  border-radius: 999px; border: 1px solid #e2e8f0; background: #f8fafc; color: var(--ink);
+  cursor: pointer; transition: box-shadow .2s ease, transform .06s ease;
+}
+.chip:active { transform: scale(.98); }
+.chip-on { background: #4338ca; color: #fff; border-color: #4338ca; box-shadow: 0 10px 22px rgba(67,56,202,.28); }
+
+.qa-tabs { display:flex; align-items:center; gap: 10px; }
+.tab {
+  font-size: var(--chip); padding: 10px 16px; font-weight: 900;
+  border-radius: 999px; border: 1px solid #e2e8f0; background: #f8fafc;
+  cursor: pointer; transition: transform .06s ease, box-shadow .2s ease;
+}
+.tab:active { transform: scale(.98); }
+.tab-active { background: var(--grad-indigo); color: #fff; border-color: transparent; box-shadow: 0 10px 20px rgba(29,78,216,.25); }
+
+/* Portal tiles with spray/neon */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.tile {
+  position: relative; overflow: hidden; text-align: left; cursor: pointer;
+  color: var(--ink); border: 0; border-radius: 26px; padding: 22px;
+  background: var(--grad-1);
+  box-shadow: 0 20px 46px rgba(2, 8, 20, 0.20);
+  transform-style: preserve-3d;
+  transition: transform .12s ease, box-shadow .2s ease, filter .2s ease;
+}
+.tile:hover { transform: translateY(-2px) rotateX(.5deg); box-shadow: 0 28px 56px rgba(2, 8, 20, 0.28); }
+
+.tile:before, .tile:after{
+  content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:multiply;
+}
+.tile:before{
+  background:
+    radial-gradient(3px 3px at 10% 15%, rgba(0,0,0,.10), transparent 60%),
+    radial-gradient(2px 2px at 35% 40%, rgba(0,0,0,.08), transparent 60%),
+    radial-gradient(2.5px 2.5px at 70% 60%, rgba(0,0,0,.07), transparent 60%),
+    radial-gradient(3px 3px at 85% 25%, rgba(0,0,0,.09), transparent 60%),
+    radial-gradient(2px 2px at 55% 80%, rgba(0,0,0,.08), transparent 60%);
+  opacity: var(--spray-mix);
+  animation: speckleFloat 22s linear infinite;
+}
+.tile:after{
+  background:
+    radial-gradient(60px 30px at 10% -10%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(70px 40px at 110% 10%, rgba(255,255,255,.45), transparent 60%),
+    radial-gradient(3px 3px at 25% 10%, rgba(0,0,0,.06), transparent 60%),
+    radial-gradient(2px 2px at 70% 75%, rgba(0,0,0,.05), transparent 60%);
+  opacity:.9;
+}
+.tile-glow {
+  position:absolute; inset:-25%;
+  background:
+    radial-gradient(480px 260px at 0% 0%, rgba(99,102,241,.16), transparent 60%),
+    radial-gradient(560px 290px at 100% 0%, rgba(16,185,129,.16), transparent 60%),
+    radial-gradient(560px 290px at 100% 100%, rgba(59,130,246,.14), transparent 60%),
+    radial-gradient(460px 240px at 0% 100%, rgba(236,72,153,.12), transparent 60%);
+  filter: blur(10px); opacity:.95;
+}
+.tile-body { position: relative; }
+.tile-title { font-size: 1.35em; font-weight: 1000; margin: 0 0 8px; }
+.tile-desc  { font-size: 0.96em; color: #334155; margin: 0; }
+.accent-indigo { box-shadow: inset 0 0 0 2px #6366f1, 0 0 0 2px transparent; }
+.accent-pink   { box-shadow: inset 0 0 0 2px #ec4899, 0 0 0 2px transparent; }
+.accent-teal   { box-shadow: inset 0 0 0 2px #14b8a6, 0 0 0 2px transparent; }
+.tile.accent-indigo:hover { box-shadow: inset 0 0 0 2px #6366f1, 0 16px 36px rgba(99,102,241,.35); }
+.tile.accent-pink:hover   { box-shadow: inset 0 0 0 2px #ec4899, 0 16px 36px rgba(236,72,153,.35); }
+.tile.accent-teal:hover   { box-shadow: inset 0 0 0 2px #14b8a6, 0 16px 36px rgba(20,184,166,.35); }
+
+/* Quiz options & progress */
+.qa-opts { display:grid; grid-template-columns: 1fr; gap: 12px; }
+.qa-opt {
+  display:flex; align-items:center; gap: 12px;
+  padding: 14px; border: 1px solid #e2e8f0; border-radius: 16px; background:#fff;
+  transition: box-shadow .2s ease, border-color .2s ease, transform .06s ease;
+}
+.qa-opt:hover { box-shadow: 0 10px 20px rgba(2,8,20,.06); }
+.qa-opt input { transform: scale(1.25); }
+.qa-opt-key { font-family: ui-monospace,Menlo,Consolas,monospace; width: 1.8em; text-align:center; }
+.qa-opt.is-selected { border-color:#4f46e5; background:#eef2ff; }
+.qa-opt.is-right { box-shadow: 0 0 0 3px var(--ring-right) inset; }
+.qa-opt.is-wrong { box-shadow: 0 0 0 3px var(--ring-wrong) inset; }
+
+.qa-progress { width:100%; height:18px; border-radius: 999px; background:#e2e8f0; overflow:hidden; }
+.qa-progress-inner { height:100%; background: linear-gradient(90deg, #0ea5e9, #6366f1); animation: progressFlow 2.6s linear infinite; }
+
+.sp-select, .sp-input-compact {
+  font-size: 1em; padding: 12px 14px; border-radius: 14px; border: 1px solid #cbd5e1; background: #fff;
+}
+
+/* Print color fidelity */
+@media print {
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #fff !important; }
+  .qa-card, .tile { box-shadow: none !important; }
+}
+
+/* Animations */
+@keyframes floatAurora { 0%{transform: translate3d(0,0,0) scale(1);} 100%{transform: translate3d(2%,-2%,0) scale(1.04);} }
+@keyframes driftDots    { 0%{transform: translateY(0); opacity:.42;} 50%{transform: translateY(-8px); opacity:.55;} 100%{transform: translateY(0); opacity:.42;} }
+@keyframes speckleFloat { 0%{transform: translate3d(0,0,0);} 100%{transform: translate3d(-2%, 2%, 0);} }
+@keyframes shimmer      { 0%{transform: translateX(-120%);} 60%{transform: translateX(120%);} 100%{transform: translateX(120%);} }
+@keyframes neonPulse {
+  0%,100% { text-shadow: 0 0 6px var(--neon-cyan), 0 0 14px var(--neon-indigo), 0 0 26px var(--neon-pink); filter: saturate(115%); }
+  50%     { text-shadow: 0 0 8px var(--neon-lime), 0 0 16px var(--neon-cyan), 0 0 28px var(--neon-indigo); filter: saturate(135%); }
+}
+@keyframes progressFlow { 0% { filter: hue-rotate(0deg); } 100% { filter: hue-rotate(360deg); } }
+
+/* Motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  body:before, body:after, .tile:before, .tile:after, .btn-shimmer:before, .qa-progress-inner { animation: none !important; }
+}

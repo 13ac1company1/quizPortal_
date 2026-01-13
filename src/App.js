@@ -1,278 +1,115 @@
-import React, { useState, useEffect } from "react";
-import wordLists from "./discovery_k12_spelling_5th_grade.json";
-import "./spellingQuizStyles.css";
+// src/App.js
+import React, { useEffect, useState } from "react";
+import SpellingApp from "./SpellingApp.js";
+import QuizApp from "./QuizApp.js";
+import PrintCenter from "./PrintCenter.js";
+import ConstitutionCenter from "./ConstitutionCenter.js";
+import "./QuizApp.css";
+import "./SpellingQuiz.css";
+import Dashboard from "./Dashboard.js";
+import PerformanceChart from "./PerformanceChart.js";
+import LearningPortalUI from "./LearningPortalUI.js";
 
 export default function App() {
-  const [selectedWeek, setSelectedWeek] = useState(() => {
-    const savedWeek = localStorage.getItem("selectedWeek");
-    return savedWeek ? parseInt(savedWeek) : null;
-  });
-  const [answers, setAnswers] = useState(() => {
-    const savedAnswers = localStorage.getItem("answers");
-    return savedAnswers ? JSON.parse(savedAnswers) : Array(15).fill("");
-  });
-  const [submitted, setSubmitted] = useState(() => {
-    return localStorage.getItem("submitted") === "true";
-  });
-  const [score, setScore] = useState(0);
-  const [rate, setRate] = useState(1);
-  const [pitch, setPitch] = useState(1);
-  const [practiceMode, setPracticeMode] = useState(false);
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("darkMode") === "true";
-  });
-  const [wordDetails, setWordDetails] = useState({}); // for storing definitions/examples
-  const [showFullList, setShowFullList] = useState(false);
+  var [view, setView] = useState("portal"); // 'portal' | 'quiz' | 'spelling' | 'print' | 'constitution'
+  useEffect(function () { window.scrollTo(0, 0); }, [view]);
 
-  useEffect(() => {
-    localStorage.setItem("selectedWeek", selectedWeek);
-    localStorage.setItem("answers", JSON.stringify(answers));
-    localStorage.setItem("submitted", submitted);
-    localStorage.setItem("darkMode", darkMode);
-  }, [selectedWeek, answers, submitted, darkMode]);
+  function resetSpellingQuizState() {
+    try {
+      localStorage.removeItem("selectedWeek");
+      localStorage.removeItem("answers");
+      localStorage.removeItem("submitted");
+      localStorage.removeItem("darkMode");
+    } catch (e) { }
+  }
 
-  const handleWeekChange = (e) => {
-    const weekNum = parseInt(e.target.value);
-    setSelectedWeek(weekNum);
-    setAnswers(Array(15).fill(""));
-    setSubmitted(false);
-    setScore(0);
-    setWordDetails({});
-  };
+  function handleBackToPortal() {
+    if (view === "spelling") {
+      resetSpellingQuizState();
+    }
+    setView("portal");
+  }
 
-  const handleInputChange = (index, value) => {
-    const updated = [...answers];
-    updated[index] = value;
-    setAnswers(updated);
-  };
-
-  const handleSubmit = () => {
-    setSubmitted(true);
-    const weekData = wordLists.weeks.find(function (w) {
-      return w.week === selectedWeek;
-    });
-    let newScore = 0;
-    answers.forEach(function (a, i) {
-      if (a.trim().toLowerCase() === weekData.words[i].toLowerCase()) {
-        newScore++;
-      }
-    });
-    setScore(newScore);
-    playSound(newScore >= 10 ? "correct" : "wrong");
-  };
-
-  const playSound = (type) => {
-    const audio = new Audio(
-      type === "correct" ? "/sounds/correct.mp3" : "/sounds/wrong.mp3"
+  function Tile(props) {
+    return (
+      <button className={"tile accent-indigo"} onClick={props.onClick} style={{ position: "relative" }}>
+        <div className="tile-glow" />
+        <div className="tile-body">
+          <h3 className="tile-title">{props.title}</h3>
+          <p className="tile-desc">{props.desc}</p>
+        </div>
+      </button>
     );
-    audio.play();
-  };
-
-  const speak = (word) => {
-    const msg = new SpeechSynthesisUtterance(word);
-    msg.rate = rate;
-    msg.pitch = pitch;
-    speechSynthesis.speak(msg);
-  };
-
-  const fetchDefinition = (word) => {
-    if (wordDetails[word]) {
-      alert(
-        word + "\n\n" + wordDetails[word].definition + "\n\nExample: " + wordDetails[word].example
-      );
-      return;
-    }
-
-    fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
-      .then(function (res) {
-        return res.json();
-      })
-      .then(function (data) {
-        if (Array.isArray(data)) {
-          const def = data[0].meanings[0].definitions[0].definition;
-          const example = data[0].meanings[0].definitions[0].example || "No example.";
-          const updated = Object.assign({}, wordDetails);
-          updated[word] = { definition: def, example: example };
-          setWordDetails(updated);
-          alert(word + "\n\n" + def + "\n\nExample: " + example);
-        } else {
-          alert("Definition not found.");
-        }
-      })
-      .catch(function () {
-        alert("Error fetching definition.");
-      });
-  };
-
-  const autoPronounce = () => {
-    const weekData = wordLists.weeks.find(function (w) {
-      return w.week === selectedWeek;
-    });
-    if (!weekData) return;
-    let i = 0;
-    const interval = setInterval(function () {
-      if (i < weekData.words.length) {
-        speak(weekData.words[i]);
-        i++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 2500);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const toggleDarkMode = () => {
-    const body = document.body;
-    if (body.classList.contains("dark")) {
-      body.classList.remove("dark");
-    } else {
-      body.classList.add("dark");
-    }
-  };
-
-  const printWordList = () => {
-    const weekData = wordLists.weeks.find(function (w) {
-      return w.week === selectedWeek;
-    });
-    if (!weekData) return;
-
-    let output = "Spelling List - Week " + weekData.week + "\n\n";
-    weekData.words.forEach(function (word, i) {
-      const def = wordDetails[word] ? wordDetails[word].definition : "";
-      const example = wordDetails[word] ? wordDetails[word].example : "";
-      output += i + 1 + ". " + word + "\nDefinition: " + def + "\nExample: " + example + "\n\n";
-    });
-
-    const newWin = window.open("", "_blank");
-    if (newWin) {
-      newWin.document.write("<pre>" + output + "</pre>");
-      newWin.print();
-    }
-  };
-
-  const weekData = wordLists.weeks.find(function (w) {
-    return w.week === selectedWeek;
-  });
+  }
 
   return (
-    <div className="container">
-      <div className="header">
-        <h1>✨ Spelling Galaxy ✨</h1>
-        <div className="options">
-          <button
-            onClick={function () {
-              setDarkMode(!darkMode);
-              toggleDarkMode();
-            }}
-          >
-            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-          </button>
+    <div className="qa-container animated-bg">
+      <div className="qa-inner">
+        {view !== "portal" ? (
+          <div className="qa-card sp-card" style={{ marginBottom: 16 }}>
+            <button className="btn btn-ghost" onClick={handleBackToPortal}>
+              ← Back to Portal
+            </button>
+          </div>
+        ) : null}
+        {view === "portal" ? (
+          <div className="portal-wrap menu-area">
+            <header className="portal-head">
+              <h1 className="qa-title neon-pulse">✨ Learning Portal</h1>
+              <p className="qa-subtitle">Tap a module to begin — topics, quizzes, spelling, printables, and the Constitution with full text-to-speech.</p>
+            </header>
 
-          <label>
-            <input
-              type="checkbox"
-              checked={practiceMode}
-              onChange={function () {
-                setPracticeMode(!practiceMode);
-              }}
-            />
-            Practice Mode 🎓
-          </label>
+            <div className="portal-grid">
+              <Tile
+                title="History & Science Topics"
+                desc="Provides relative links to quiz topics "
+                onClick={function () { setView("topics"); }}
+              />
+              <Tile
+                title="History & Science Quizzes"
+                desc="Multiple-choice with practice mode, autosave, dashboard, and reviews."
+                onClick={function () { setView("quiz"); }}
+              />
+              <Tile
+                title="Spelling Galaxy"
+                desc="Giant on-screen keyboard, speech, practice tools, and performance history."
+                onClick={function () { setView("spelling"); }}
+              />
+              <Tile
+                title="Print Center"
+                desc="Print question sheets & answer keys for History, Science, or Spelling."
+                onClick={function () { setView("print"); }}
+              />
+              <Tile
+                title="Constitution & Bill of Rights"
+                desc="Learn with TTS on every section, take quizzes, and print handouts."
+                onClick={function () { setView("constitution"); }}
+              />
+              <Tile
+                title="History/Science Quiz Performance"
+                desc="Charts & progress across History, Science Quizzes!"
+                onClick={function () { setView("performance"); }}
+                accent="accent-indigo"
+              />
+              <Tile
+                title="Spelling Quiz Performance"
+                desc="Charts & progress for Spelling Quizzes!"
+                onClick={function () { setView("spelling_performance"); }}
+                accent="accent-indigo"
+              />
 
-          {practiceMode && (
-            <>
-              <button onClick={autoPronounce}>🔊 Auto-Pronounce All</button>
-              <button onClick={function () {
-                setShowFullList(!showFullList);
-              }}>
-                📖 Show Word List
-              </button>
-              <button onClick={printWordList}>🖨️ Print</button>
-            </>
-          )}
-        </div>
-        <div className="sliders">
-          <label>Rate: {rate}</label>
-          <input type="range" min="0.5" max="2" step="0.1" value={rate} onChange={function (e) { setRate(parseFloat(e.target.value)); }} />
-          <label>Pitch: {pitch}</label>
-          <input type="range" min="0" max="2" step="0.1" value={pitch} onChange={function (e) { setPitch(parseFloat(e.target.value)); }} />
-        </div>
-        <select value={selectedWeek || ""} onChange={handleWeekChange}>
-          <option value="">Select a Week</option>
-          {wordLists.weeks.map(function (w) {
-            return (
-              <option key={w.week} value={w.week}>
-                Week {w.week}
-              </option>
-            );
-          })}
-        </select>
-      </div>
-
-      {weekData && (
-        <form
-          onSubmit={function (e) {
-            e.preventDefault();
-            handleSubmit();
-          }}
-          className="quiz-form"
-        >
-          <h2>Week {weekData.week} Quiz</h2>
-          {weekData.words.map(function (word, i) {
-            return (
-              <div className="word-box" key={i}>
-                <label>Word #{i + 1}</label>
-                <input
-                  type="text"
-                  value={answers[i]}
-                  onChange={function (e) {
-                    handleInputChange(i, e.target.value);
-                  }}
-                  disabled={submitted && !practiceMode}
-                />
-                <button type="button" onClick={function () { speak(word); }}>🔊</button>
-                <button type="button" onClick={function () { fetchDefinition(word); }}>📖</button>
-                {practiceMode && <p className="helper">Answer: {word}</p>}
-                {submitted && !practiceMode && (
-                  <p className={answers[i].trim().toLowerCase() === word.toLowerCase() ? "correct" : "wrong"}>
-                    {answers[i].trim().toLowerCase() === word.toLowerCase() ? "✅ Correct" : "❌ " + word}
-                  </p>
-                )}
-              </div>
-            );
-          })}
-
-          {!practiceMode && !submitted && (
-            <button type="submit" className="submit-btn">Submit Quiz</button>
-          )}
-          {!practiceMode && submitted && (
-            <div className="score-box">
-              <p>🎉 Score: {score} / 15</p>
             </div>
-          )}
-        </form>
-      )}
+          </div>
+        ) : null}
 
-      {showFullList && weekData && (
-        <div className="word-list">
-          <h3>Full Word List – Week {weekData.week}</h3>
-          {weekData.words.map(function (word, i) {
-            const details = wordDetails[word];
-            return (
-              <div key={i} className="list-item">
-                <strong>{i + 1}. {word}</strong>
-                <p>Definition: {details ? details.definition : "Not loaded yet"}</p>
-                <p>Example: {details ? details.example : "Not loaded yet"}</p>
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      <button onClick={scrollToTop} className="to-top-btn">▲</button>
+        {view === "topics" ? <LearningPortalUI /> : null}
+        {view === "quiz" ? <QuizApp /> : null}
+        {view === "spelling" ? <SpellingApp /> : null}
+        {view === "print" ? <PrintCenter /> : null}
+        {view === "constitution" ? <ConstitutionCenter /> : null}
+        {view === "performance" ? <Dashboard /> : null}
+        {view === "spelling_performance" ? <PerformanceChart /> : null}
+      </div>
     </div>
   );
 }

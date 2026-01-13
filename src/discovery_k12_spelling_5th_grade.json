@@ -35,7 +35,7 @@
         "shoulder",
         "shadow",
         "sweater",
-        "trash",
+        "thirsty",
         "napkin",
         "double"
       ]
@@ -64,12 +64,12 @@
       "week": 4,
       "words": [
         "individual",
-        "listed",
+        "listened",
         "upstairs",
         "reply",
         "sincerely",
         "succeed",
-        "brother",
+        "bracelet",
         "honesty",
         "explanation",
         "horrible",
@@ -77,7 +77,7 @@
         "climbing",
         "coward",
         "ordered",
-        "frequent"
+        "training"
       ]
     },
     {
@@ -91,13 +91,13 @@
         "salary",
         "probable",
         "desperate",
-        "soulfully",
-        "superior",
+        "absolutely",
+        "squirrel",
         "temporary",
-        "immoral",
-        "former",
-        "petition",
-        "reaction"
+        "mineral",
+        "formerly",
+        "patent",
+        "reckon"
       ]
     },
     {
@@ -127,8 +127,8 @@
         "personality",
         "operate",
         "gathered",
-        "accuses",
-        "acquire",
+        "causes",
+        "accuse",
         "delegate",
         "diesel",
         "familiar",
@@ -189,13 +189,13 @@
         "preference",
         "district",
         "complaint",
-        "license",
-        "hysteria",
-        "invited",
+        "limited",
+        "invitation",
+        "hesitate",
+        "typical",
         "economy",
         "mutual",
-        "thief",
-        "assessment",
+        "studying",
         "acceptance",
         "advantage"
       ]
@@ -206,9 +206,10 @@
         "fugitive",
         "Nevada",
         "education",
-        "abundant",
         "understand",
-        "absent",
+        "behind",
+        "audit",
+        "system",
         "hermit",
         "condo",
         "volunteer",
@@ -216,39 +217,39 @@
         "electric",
         "mathematics",
         "island",
-        "banquet",
-        "announcement"
+        "banquet"
       ]
     },
     {
       "week": 12,
       "words": [
-        "edition",
-        "encourage",
+        "occasion",
         "foreign",
-        "official",
-        "assignment",
+        "challenge",
+        "abandon",
+        "magnificent",
+        "obstacle",
         "performance",
         "victim",
         "scenery",
         "leading",
         "celebrated",
-        "eventive",
+        "attentive",
         "pilgrims",
         "majesty",
-        "referring",
-        "slice"
+        "referring"
       ]
     },
     {
       "week": 13,
       "words": [
+        "edition",
         "accordance",
-        "appointment",
-        "society",
-        "conservation",
-        "reflection",
-        "volunteer",
+        "annual",
+        "tongue",
+        "session",
+        "confederation",
+        "regarding",
         "permission",
         "silence",
         "poetry",
@@ -256,25 +257,24 @@
         "urge",
         "bored",
         "annual",
-        "attorney",
-        "edition"
+        "attorney"
       ]
     },
     {
       "week": 14,
       "words": [
         "employees",
-        "government",
-        "legislate",
-        "reminisce",
-        "associated",
-        "rescue",
+        "judgment",
+        "legislature",
+        "remittance",
+        "associate",
+        "elaborate",
         "disappointed",
         "article",
         "approach",
         "armor",
         "oversight",
-        "revenue",
+        "afterward",
         "certificate",
         "negative",
         "apparel"
@@ -285,19 +285,19 @@
       "words": [
         "benefit",
         "damaging",
-        "fraud",
-        "grateful",
-        "contract",
-        "confidence",
-        "illustrate",
+        "gradual",
+        "fixture",
+        "credit",
+        "comfortable",
+        "immortal",
         "liquid",
+        "impress",
+        "joined",
         "examine",
         "treasury",
         "ceased",
         "straightened",
-        "sense",
-        "restore",
-        "permit"
+        "sense"
       ]
     },
     {
@@ -313,7 +313,7 @@
         "chores",
         "weary",
         "quarter",
-        "other",
+        "together",
         "commencement",
         "discrimination",
         "environment",
@@ -330,7 +330,7 @@
         "conference",
         "merely",
         "positively",
-        "fondly",
+        "foundry",
         "relieve",
         "nervous",
         "arrangement",
@@ -350,14 +350,14 @@
         "correspond",
         "cafeteria",
         "applicant",
+        "argument",
         "grandmother",
         "reserved",
         "senator",
         "vicinity",
         "registration",
         "incident",
-        "manufacturer",
-        "corrected"
+        "manufacturer"
       ]
     },
     {
@@ -372,12 +372,12 @@
         "distribute",
         "mechanical",
         "leisure",
-        "recommendation",
+        "commendation",
+        "absence",
         "chaperon",
         "bishop",
         "liberty",
-        "register",
-        "sacrifice"
+        "register"
       ]
     },
     {
@@ -390,10 +390,10 @@
         "doubtful",
         "escaped",
         "conversation",
-        "recount",
+        "prevail",
         "region",
         "creature",
-        "argue",
+        "cabinet",
         "argument",
         "accompany",
         "personality",
@@ -415,7 +415,7 @@
         "standard",
         "details",
         "narrative",
-        "astound",
+        "enemies",
         "astonish",
         "action"
       ]
@@ -454,7 +454,7 @@
         "although",
         "structure",
         "instinct",
-        "deducted",
+        "candidate",
         "business",
         "windshield",
         "bouquet"
@@ -495,9 +495,9 @@
         "mistaken",
         "economics",
         "applicant",
-        "simple",
-        "injure",
-        "future"
+        "fatigue",
+        "simply",
+        "injure"
       ]
     },
     {
@@ -505,19 +505,19 @@
       "words": [
         "humble",
         "requirement",
+        "mansion",
         "personally",
-        "compound",
         "microprocessor",
-        "accomplished",
-        "catherdral",
+        "accompanied",
+        "compound",
+        "cathedral",
         "investigate",
         "vein",
         "youth",
         "withhold",
         "superior",
         "adjourned",
-        "authority",
-        "requirement"
+        "authority"
       ]
     },
     {
@@ -525,19 +525,19 @@
       "words": [
         "careless",
         "advisable",
-        "inconent",
+        "innocent",
         "automatic",
-        "auditor",
+        "delicious",
         "tremendous",
-        "flatter",
-        "otherwise",
-        "fizzle",
-        "interrupt",
-        "teaspoon",
-        "struggle",
-        "delicate",
-        "correction",
-        "control"
+        "yield",
+        "surface",
+        "entirely",
+        "enable",
+        "control",
+        "chorus",
+        "customers",
+        "destruction",
+        "locality"
       ]
     },
     {
@@ -548,16 +548,16 @@
         "foul",
         "goodness",
         "instructor",
-        "desire",
         "inability",
-        "disorder",
-        "address",
-        "clearing",
-        "gauge",
-        "gratitude",
-        "barely",
-        "author",
-        "sandwich"
+        "disaster",
+        "flatter",
+        "otherwise",
+        "fizzle",
+        "interrupt",
+        "teaspoon",
+        "struggle",
+        "delicate",
+        "correction"
       ]
     },
     {
@@ -569,15 +569,15 @@
         "struggle",
         "screamed",
         "bronze",
-        "affection",
-        "dispose",
-        "image",
-        "closet",
-        "bearing",
-        "physical",
-        "inclined",
-        "connect",
-        "personal"
+        "achieve",
+        "address",
+        "clearing",
+        "gauge",
+        "gratitude",
+        "barely",
+        "author",
+        "sandwich",
+        "survey"
       ]
     },
     {
@@ -585,26 +585,26 @@
       "words": [
         "assumed",
         "awoke",
-        "righteous",
-        "rejoice",
-        "grieve",
-        "deception",
+        "delicious",
+        "wisdom",
+        "penalty",
+        "disappointment",
+        "captain",
         "cottage",
-        "chapel",
-        "afford",
-        "curse",
-        "praise",
-        "correct",
-        "encourage",
-        "faithful",
-        "belief"
+        "dispose",
+        "image",
+        "closet",
+        "bearing",
+        "physical",
+        "inclined",
+        "connect"
       ]
     },
     {
       "week": 31,
       "words": [
         "emergency",
-        "insured",
+        "instruct",
         "reported",
         "patience",
         "official",
@@ -644,7 +644,7 @@
       "week": 33,
       "words": [
         "selection",
-        "adopt",
+        "adopted",
         "security",
         "fourteenth",
         "severe",
@@ -663,6 +663,7 @@
     {
       "week": 34,
       "words": [
+        "allow",
         "between",
         "selfish",
         "beggar",
@@ -676,8 +677,7 @@
         "signed",
         "provided",
         "assortment",
-        "tremble",
-        "schools"
+        "tremble"
       ]
     },
     {
