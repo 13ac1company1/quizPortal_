@@ -1,0 +1,593 @@
+{
+  "subject": "Personal Finance",
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Personal Finance Test 1",
+      "questions": [
+        {
+          "id": "PF1Q1",
+          "q": "When you take money out of a bank account, it is called?",
+          "choices": {
+            "a": "Withdrawal",
+            "b": "Deposit",
+            "c": "Transfer",
+            "d": "Interest payment"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q2",
+          "q": "To have a negative balance in a bank account, is called?",
+          "choices": {
+            "a": "Deposited",
+            "b": "Overdrawn",
+            "c": "Reconciled",
+            "d": "Insured"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q3",
+          "q": "To purchase a car or home, a person might get a?",
+          "choices": {
+            "a": "Tax refund",
+            "b": "Loan",
+            "c": "Grant",
+            "d": "Dividend"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q4",
+          "q": "Money you make by having a job, is called?",
+          "choices": {
+            "a": "Collateral",
+            "b": "Expense",
+            "c": "Income",
+            "d": "Debt"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q5",
+          "q": "People may pay a portion of their income to their state or federal government, and this is know as?",
+          "choices": {
+            "a": "A tax",
+            "b": "A donation",
+            "c": "A dividend",
+            "d": "A rebate"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q6",
+          "q": "If you have credit cards accounts that you owe money to, it is called?",
+          "choices": {
+            "a": "Equity",
+            "b": "Savings",
+            "c": "Debt",
+            "d": "Income"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q7",
+          "q": "To buy a car, house or other item that you obtain a loan for, you may complete a?",
+          "choices": {
+            "a": "Tax return",
+            "b": "Deposit receipt",
+            "c": "Credit Application",
+            "d": "Withdrawal slip"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q8",
+          "q": "At the end of the year, a person may need to file these with their state or federal government?",
+          "choices": {
+            "a": "Bank statements",
+            "b": "Tax Returns",
+            "c": "Loan applications",
+            "d": "Purchase receipts"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q9",
+          "q": "What can you use to withdraw money from a bank account?",
+          "choices": {
+            "a": "Routing number",
+            "b": "Safe-deposit box",
+            "c": "ATM",
+            "d": "Credit bureau"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF1Q10",
+          "q": "A person that wants to maintain good credit, may want to regularly check their?",
+          "choices": {
+            "a": "Insurance policy",
+            "b": "Credit Report",
+            "c": "Tax refund",
+            "d": "Checking balance"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Personal Finance Test 2",
+      "questions": [
+        {
+          "id": "PF2Q1",
+          "q": "To manage ones finances, a person should?",
+          "choices": {
+            "a": "Create a budget, track spending, and set financial goals",
+            "b": "Spend income before recording expenses",
+            "c": "Use credit for every purchase",
+            "d": "Avoid reviewing financial accounts"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF2Q2",
+          "q": "A person who is financially responsible would?",
+          "choices": {
+            "a": "Ignore monthly credit-card statements",
+            "b": "Use the entire credit limit every month",
+            "c": "Pay only after an account is overdue",
+            "d": "Pay off credit card balances each month"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF2Q3",
+          "q": "Something that shows what you spend on a monthly basis is?",
+          "choices": {
+            "a": "A credit score",
+            "b": "A promissory note",
+            "c": "A mortgage",
+            "d": "A budget"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF2Q4",
+          "q": "Is a skateboard categorized as a Want or a Need?",
+          "choices": {
+            "a": "Want",
+            "b": "Income",
+            "c": "Debt",
+            "d": "Need"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF2Q5",
+          "q": "Usually, the best place to finance a car purchase is through?",
+          "choices": {
+            "a": "A credit union",
+            "b": "A payday lender",
+            "c": "A pawn shop",
+            "d": "An unlicensed lender"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF2Q6",
+          "q": "If you were buying your first home, you might have?",
+          "choices": {
+            "a": "A certificate of deposit",
+            "b": "A tax return",
+            "c": "An auto loan",
+            "d": "A mortgage"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Personal Finance Test 3",
+      "questions": [
+        {
+          "id": "PF3Q1",
+          "q": "You can build good credit by doing the following?",
+          "choices": {
+            "a": "Max out every credit card",
+            "b": "Miss payment deadlines regularly",
+            "c": "Pay bills on time, keep balances low, and review credit reports",
+            "d": "Apply for many accounts at once"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF3Q2",
+          "q": "What are the three credit bureaus?",
+          "choices": {
+            "a": "Visa, Mastercard, and Discover",
+            "b": "FICO, FDIC, and IRS",
+            "c": "Equifax, TransUnion and Experian",
+            "d": "Chase, Citi, and Wells Fargo"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF3Q3",
+          "q": "FICO is a?",
+          "choices": {
+            "a": "Routing number",
+            "b": "Tax deduction",
+            "c": "Retirement account",
+            "d": "Credit Score"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF3Q4",
+          "q": "A legal instrument in which one person promises to pay another is called a?",
+          "choices": {
+            "a": "Purchase receipt",
+            "b": "Promissory Note",
+            "c": "Insurance policy",
+            "d": "Bank statement"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF3Q5",
+          "q": "The income left over from a paycheck after deducting taxes is called?",
+          "choices": {
+            "a": "Net pay",
+            "b": "Gross pay",
+            "c": "Sales tax",
+            "d": "Interest rate"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF3Q6",
+          "q": "A person can save money by doing the following?",
+          "choices": {
+            "a": "Buy every item immediately",
+            "b": "Borrow for all routine expenses",
+            "c": "Ignore prices and fees",
+            "d": "Follow a budget, compare prices, and reduce unnecessary spending"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Personal Finance Test 4",
+      "questions": [
+        {
+          "id": "PF4Q1",
+          "q": "To manage ones finances, a person should?",
+          "choices": {
+            "a": "Spend income before recording expenses",
+            "b": "Create a budget, track spending, and set financial goals",
+            "c": "Use credit for every purchase",
+            "d": "Avoid reviewing financial accounts"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q2",
+          "q": "A person who is financially responsible would?",
+          "choices": {
+            "a": "Pay only after an account is overdue",
+            "b": "Ignore monthly credit-card statements",
+            "c": "Pay off credit card balances each month",
+            "d": "Use the entire credit limit every month"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q3",
+          "q": "Something that shows what you spend on a monthly basis is?",
+          "choices": {
+            "a": "A promissory note",
+            "b": "A budget",
+            "c": "A credit score",
+            "d": "A mortgage"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q4",
+          "q": "Usually, the best place to finance a car purchase is through?",
+          "choices": {
+            "a": "A pawn shop",
+            "b": "An unlicensed lender",
+            "c": "A payday lender",
+            "d": "A credit union"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q5",
+          "q": "If you were buying your first home, you might have?",
+          "choices": {
+            "a": "A certificate of deposit",
+            "b": "A tax return",
+            "c": "An auto loan",
+            "d": "A mortgage"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q6",
+          "q": "You can build good credit by doing the following?",
+          "choices": {
+            "a": "Miss payment deadlines regularly",
+            "b": "Pay bills on time, keep balances low, and review credit reports",
+            "c": "Max out every credit card",
+            "d": "Apply for many accounts at once"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q7",
+          "q": "What are the three credit bureaus?",
+          "choices": {
+            "a": "Visa, Mastercard, and Discover",
+            "b": "Chase, Citi, and Wells Fargo",
+            "c": "FICO, FDIC, and IRS",
+            "d": "Equifax, TransUnion and Experian"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q8",
+          "q": "FICO is a?",
+          "choices": {
+            "a": "Tax deduction",
+            "b": "Credit Score",
+            "c": "Retirement account",
+            "d": "Routing number"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q9",
+          "q": "A legal instrument in which one person promises to pay another is called a?",
+          "choices": {
+            "a": "Bank statement",
+            "b": "Purchase receipt",
+            "c": "Promissory Note",
+            "d": "Insurance policy"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q10",
+          "q": "The income left over from a paycheck after deducting taxes is called?",
+          "choices": {
+            "a": "Interest rate",
+            "b": "Gross pay",
+            "c": "Sales tax",
+            "d": "Net pay"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q11",
+          "q": "A person can save money by doing the following?",
+          "choices": {
+            "a": "Buy every item immediately",
+            "b": "Borrow for all routine expenses",
+            "c": "Follow a budget, compare prices, and reduce unnecessary spending",
+            "d": "Ignore prices and fees"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q12",
+          "q": "When you take money out of a bank account, it is called?",
+          "choices": {
+            "a": "Withdrawal",
+            "b": "Deposit",
+            "c": "Interest payment",
+            "d": "Transfer"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q13",
+          "q": "To have a negative balance in a bank account, is called?",
+          "choices": {
+            "a": "Deposited",
+            "b": "Overdrawn",
+            "c": "Reconciled",
+            "d": "Insured"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q14",
+          "q": "To purchase a car or home, a person might get a?",
+          "choices": {
+            "a": "Tax refund",
+            "b": "Dividend",
+            "c": "Grant",
+            "d": "Loan"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q15",
+          "q": "People may pay a portion of their income to their state or federal government, and this is know as?",
+          "choices": {
+            "a": "A tax",
+            "b": "A dividend",
+            "c": "A rebate",
+            "d": "A donation"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q16",
+          "q": "If you have credit cards accounts that you owe money to, it is called?",
+          "choices": {
+            "a": "Debt",
+            "b": "Equity",
+            "c": "Income",
+            "d": "Savings"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q17",
+          "q": "To buy a car, house or other item that you obtain a loan for, you may complete a?",
+          "choices": {
+            "a": "Withdrawal slip",
+            "b": "Credit Application",
+            "c": "Tax return",
+            "d": "Deposit receipt"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q18",
+          "q": "At the end of the year, a person may need to file these with their state or federal government?",
+          "choices": {
+            "a": "Purchase receipts",
+            "b": "Bank statements",
+            "c": "Tax Returns",
+            "d": "Loan applications"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q19",
+          "q": "What can you use to withdraw money from a bank account?",
+          "choices": {
+            "a": "ATM",
+            "b": "Credit bureau",
+            "c": "Safe-deposit box",
+            "d": "Routing number"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q20",
+          "q": "A person that wants to maintain good credit, may want to regularly check their?",
+          "choices": {
+            "a": "Credit Report",
+            "b": "Checking balance",
+            "c": "Tax refund",
+            "d": "Insurance policy"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q21",
+          "q": "What is the first thing you should do if your identity has been stolen?",
+          "choices": {
+            "a": "Delete unrelated bank records",
+            "b": "Apply for additional credit immediately",
+            "c": "Call the companies where you know the fraud happened",
+            "d": "Wait several months before responding"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q22",
+          "q": "A financial account maintained by a financial institution for a customer is called a?",
+          "choices": {
+            "a": "Insurance claim",
+            "b": "Bank account",
+            "c": "Credit report",
+            "d": "Tax deduction"
+          },
+          "answer": "b",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q23",
+          "q": "A software program that lets you enter information about all your expenses and can produce reports on how much you spend in each category is called?",
+          "choices": {
+            "a": "Credit card",
+            "b": "Web browser",
+            "c": "Accounting software",
+            "d": "Word processor"
+          },
+          "answer": "c",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q24",
+          "q": "Checking Account, Savings, Account, Money Market Accounts, and CDs are all considered?",
+          "choices": {
+            "a": "Bank accounts",
+            "b": "Credit scores",
+            "c": "Insurance policies",
+            "d": "Personal loans"
+          },
+          "answer": "a",
+          "choiceLang": "en-US"
+        },
+        {
+          "id": "PF4Q25",
+          "q": "Which of the following are all part of being financially responsible?",
+          "choices": {
+            "a": "Spending more than you earn every month",
+            "b": "Ignoring debt and account statements",
+            "c": "Using credit without a repayment plan",
+            "d": "Creating a budget, setting goals, reducing debt, and living within your means"
+          },
+          "answer": "d",
+          "choiceLang": "en-US"
+        }
+      ]
+    }
+  ]
+}
