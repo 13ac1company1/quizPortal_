@@ -3,775 +3,553 @@
   "weeks": [
     {
       "week": 1,
-      "title": "The Nation Up To 1850",
+      "title": "Ancient Greece, India, China, and Rome",
       "questions": [
         {
           "id": "H1Q1",
-          "q": "The colonial history of the United States covers?",
+          "q": "Ancient Greek civilization lasted from the Archaic period until approximately when?",
           "choices": {
-            "a": "European settlements",
-            "b": "Asian trade routes",
-            "c": "Pacific exploration",
-            "d": "African kingdoms"
+            "a": "The start of the Renaissance",
+            "b": "The Industrial Revolution",
+            "c": "The end of antiquity around AD 600",
+            "d": "The beginning of the Ice Age"
           },
-          "answer": "a"
+          "answer": "c"
         },
         {
           "id": "H1Q2",
-          "q": "In the referenced map, the name of colony designated as A and E?",
+          "q": "Classical Greece helped form the foundation of which cultural tradition?",
           "choices": {
-            "a": "Massachusetts",
-            "b": "Virginia",
-            "c": "New York",
-            "d": "Georgia"
+            "a": "Mesoamerican culture",
+            "b": "Polynesian culture",
+            "c": "Western culture",
+            "d": "West African culture"
           },
-          "answer": "a"
+          "answer": "c"
         },
         {
           "id": "H1Q3",
-          "q": "In the map, the colonies designated J and K?",
+          "q": "Which city-state became a leading center of government, art, and philosophy in ancient Greece?",
           "choices": {
-            "a": "North Carolina and South Carolina",
-            "b": "New Jersey and Delaware",
-            "c": "New Hampshire and Rhode Island",
-            "d": "Pennsylvania and Maryland"
+            "a": "Alexandria",
+            "b": "Athens",
+            "c": "Carthage",
+            "d": "Babylon"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H1Q4",
-          "q": "The French and Indian War (Seven Years\u2019 War) occurred in?",
+          "q": "Where did ancient Roman civilization begin?",
           "choices": {
-            "a": "1754\u20131763",
-            "b": "1775\u20131783",
-            "c": "1812\u20131815",
-            "d": "1861\u20131865"
+            "a": "In the Indus Valley",
+            "b": "On the Italian Peninsula",
+            "c": "Along the Nile River",
+            "d": "On the Korean Peninsula"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H1Q5",
-          "q": "The French and Indian War was fought mainly between which colonies?",
+          "q": "Around what year did the Roman Republic begin?",
           "choices": {
-            "a": "British America and New France",
-            "b": "Spain and Portugal",
-            "c": "Dutch and British",
-            "d": "Russia and Britain"
+            "a": "AD 1066",
+            "b": "221 BC",
+            "c": "AD 476",
+            "d": "509 BC"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H1Q6",
-          "q": "The first constitution of the United States adopted on Nov. 15, 1777?",
+          "q": "After roughly 500 years as a republic, Rome became what form of government?",
           "choices": {
-            "a": "Articles of Confederation",
-            "b": "U.S. Constitution",
-            "c": "Magna Carta",
-            "d": "Bill of Rights"
+            "a": "The Roman Empire",
+            "b": "A constitutional monarchy",
+            "c": "A direct democracy",
+            "d": "A loose confederation"
           },
           "answer": "a"
         },
         {
           "id": "H1Q7",
-          "q": "The colony of Massachusetts was founded by?",
+          "q": "Who is generally considered the first Roman emperor?",
           "choices": {
-            "a": "Puritans",
-            "b": "Quakers",
-            "c": "Catholics",
-            "d": "Huguenots"
+            "a": "Nero",
+            "b": "Augustus",
+            "c": "Constantine",
+            "d": "Julius Caesar"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H1Q8",
-          "q": "The Constitution was ratified in 1788 (effective 1789). The supporters were called?",
+          "q": "Around what year did the Western Roman Empire fall?",
           "choices": {
-            "a": "Federalists",
-            "b": "Anti-Federalists",
-            "c": "Whigs",
-            "d": "Tories"
+            "a": "AD 476",
+            "b": "AD 1066",
+            "c": "AD 1492",
+            "d": "44 BC"
           },
           "answer": "a"
         },
         {
           "id": "H1Q9",
-          "q": "The two major political parties that emerged later?",
+          "q": "What name is commonly given to the Eastern Roman Empire?",
           "choices": {
-            "a": "Democratic Party and the Whig Party",
-            "b": "Federalists and Tories",
-            "c": "Bull Moose and Libertarian",
-            "d": "Democratic-Republicans and Green"
+            "a": "The Ottoman Republic",
+            "b": "The Byzantine Empire",
+            "c": "The Persian Empire",
+            "d": "The Holy Roman Empire"
+          },
+          "answer": "b"
+        },
+        {
+          "id": "H1Q10",
+          "q": "Which ancient civilization is also known as the Harappan civilization?",
+          "choices": {
+            "a": "The Indus Valley civilization",
+            "b": "The Shang civilization",
+            "c": "The Minoan civilization",
+            "d": "The Olmec civilization"
           },
           "answer": "a"
         },
         {
-          "id": "H1Q10",
-          "q": "After the Civil War ended in 1865, what abolished slavery?",
+          "id": "H1Q11",
+          "q": "Which river is often called the cradle of Chinese civilization?",
           "choices": {
-            "a": "The Thirteenth Amendment",
-            "b": "The Emancipation Proclamation",
-            "c": "The Fourteenth Amendment",
-            "d": "The Fifteenth Amendment"
+            "a": "The Ganges River",
+            "b": "The Mekong River",
+            "c": "The Yellow River",
+            "d": "The Yangtze River"
           },
-          "answer": "a"
+          "answer": "c"
         }
       ]
     },
     {
       "week": 2,
-      "title": "Colonial Government and Power of the People",
+      "title": "Geographic, Political, Economic, and Social Structures of Early Civilizations",
       "questions": [
         {
           "id": "H2Q1",
-          "q": "How many original colonies were there?",
+          "q": "How is the Indus Valley civilization best described?",
           "choices": {
-            "a": "13",
-            "b": "10",
-            "c": "15",
-            "d": "11"
+            "a": "A nomadic empire in Central Asia",
+            "b": "A Bronze Age civilization centered in the Indus River basin",
+            "c": "A medieval kingdom in Europe",
+            "d": "An Iron Age colony in Africa"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H2Q2",
-          "q": "Government in the colonies represented an extension of?",
+          "q": "What is another name for the Indus Valley civilization?",
           "choices": {
-            "a": "English government",
-            "b": "French monarchy",
-            "c": "Spanish crown",
-            "d": "Dutch republic"
+            "a": "The Phoenician civilization",
+            "b": "The Sumerian civilization",
+            "c": "The Mycenaean civilization",
+            "d": "The Harappan civilization"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H2Q3",
-          "q": "Who was allowed to vote in the colonies?",
+          "q": "Which modern regions contained much of the Indus Valley civilization?",
           "choices": {
-            "a": "White men who owned property",
-            "b": "All adults",
-            "c": "Only soldiers",
-            "d": "Only clergy"
+            "a": "Mexico and Central America",
+            "b": "Pakistan and northwestern India, with nearby areas",
+            "c": "Japan and the Korean Peninsula",
+            "d": "Italy, Greece, and Spain"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H2Q4",
-          "q": "The Articles of Confederation were?",
+          "q": "In which field did the Indus Valley civilization develop notable accuracy?",
           "choices": {
-            "a": "Both of the above (a first U.S. constitution; a weak central government)",
-            "b": "A trade treaty",
-            "c": "A royal charter",
-            "d": "A tax code"
+            "a": "Measuring length, mass, and time",
+            "b": "Producing gunpowder",
+            "c": "Printing books",
+            "d": "Steam-powered transportation"
           },
           "answer": "a"
         },
         {
           "id": "H2Q5",
-          "q": "The U.S. Constitution replaced the Articles of Confederation on what date?",
+          "q": "Where was ancient Mesopotamia located?",
           "choices": {
-            "a": "March 4, 1789",
-            "b": "July 4, 1776",
-            "c": "September 17, 1787",
-            "d": "June 21, 1788"
+            "a": "Between the Rhine and Danube rivers",
+            "b": "Along the upper Amazon River",
+            "c": "On islands in the Aegean Sea",
+            "d": "Between the Tigris and Euphrates rivers"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H2Q6",
-          "q": "The Bill of Rights is?",
+          "q": "Why is Mesopotamia often called the Cradle of Civilization?",
           "choices": {
-            "a": "The first 10 amendments to the Constitution",
-            "b": "A list of colonial grievances",
-            "c": "A British bill",
-            "d": "A military code"
+            "a": "It was the birthplace of the Roman Empire",
+            "b": "Some of the earliest cities and writing systems developed there",
+            "c": "It remained uninhabited for centuries",
+            "d": "It created the first modern democracy"
+          },
+          "answer": "b"
+        },
+        {
+          "id": "H2Q7",
+          "q": "What was the earliest known written language of Mesopotamia?",
+          "choices": {
+            "a": "Mandarin",
+            "b": "Sanskrit",
+            "c": "Sumerian",
+            "d": "Latin"
+          },
+          "answer": "c"
+        },
+        {
+          "id": "H2Q8",
+          "q": "On which continent was ancient Egypt located?",
+          "choices": {
+            "a": "Africa",
+            "b": "Asia",
+            "c": "South America",
+            "d": "Europe"
           },
           "answer": "a"
         },
         {
-          "id": "H2Q7",
-          "q": "The Bill of Rights include?",
+          "id": "H2Q9",
+          "q": "What geographic factor was most important to the growth of ancient Egypt?",
           "choices": {
-            "a": "All of the above (speech, religion, due process etc.)",
-            "b": "Only freedom of speech",
-            "c": "Only gun rights",
-            "d": "Only voting rights"
+            "a": "The forests of northern Europe",
+            "b": "The grasslands of Central Asia",
+            "c": "The Nile River's water and fertile floodplain",
+            "d": "The monsoon winds of India"
           },
-          "answer": "a"
+          "answer": "c"
+        },
+        {
+          "id": "H2Q10",
+          "q": "Which list contains achievements associated with ancient Egypt?",
+          "choices": {
+            "a": "Concrete highways, aqueducts, and Latin literature",
+            "b": "Pyramids, hieroglyphic writing, and advances in mathematics",
+            "c": "Gunpowder, paper money, and compasses",
+            "d": "Steam engines, telephones, and airplanes"
+          },
+          "answer": "b"
         }
       ]
     },
     {
       "week": 3,
-      "title": "Early Exploration of the Americas",
+      "title": "History and Geography of Ancient Civilizations",
       "questions": [
         {
           "id": "H3Q1",
-          "q": "Christopher Columbus was an admiral for?",
+          "q": "What period does ancient history generally cover?",
           "choices": {
-            "a": "Spain",
-            "b": "Portugal",
-            "c": "Italy",
-            "d": "England"
+            "a": "From the Industrial Revolution to today",
+            "b": "Only the years of the Roman Empire",
+            "c": "From the Renaissance to the Enlightenment",
+            "d": "From the beginning of recorded history to the early Middle Ages"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H3Q2",
-          "q": "On Columbus\u2019 third voyage (1498) he finally landed on?",
+          "q": "Approximately how much time is covered by the broad study of ancient history?",
           "choices": {
-            "a": "South America",
-            "b": "North America",
-            "c": "Greenland",
-            "d": "Hawaii"
+            "a": "About 2,000 years",
+            "b": "Roughly 5,000 years",
+            "c": "About 500 years",
+            "d": "About 1,000 years"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H3Q3",
-          "q": "Columbus had difficulty funding his expeditions because?",
+          "q": "What is prehistory?",
           "choices": {
-            "a": "Europeans thought the Earth was flat",
-            "b": "Ships didn\u2019t exist",
-            "c": "He had no crew",
-            "d": "He refused royal support"
+            "a": "The period before written records",
+            "b": "The study of future societies",
+            "c": "A record written by ancient historians",
+            "d": "The period after the Middle Ages"
           },
           "answer": "a"
         },
         {
           "id": "H3Q4",
-          "q": "In 1497, who was credited as the first to discover North America?",
+          "q": "Which country is home to one of the world's oldest continuous civilizations?",
           "choices": {
-            "a": "Giovanni Caboto (John Cabot)",
-            "b": "Amerigo Vespucci",
-            "c": "Magellan",
-            "d": "Cortez"
+            "a": "Australia",
+            "b": "Brazil",
+            "c": "China",
+            "d": "Canada"
           },
-          "answer": "a"
+          "answer": "c"
         },
         {
           "id": "H3Q5",
-          "q": "What group may have discovered the Americas prior to Columbus?",
+          "q": "What technology characterizes the Bronze Age?",
           "choices": {
-            "a": "The Vikings",
-            "b": "The Moors",
-            "c": "The Mongols",
-            "d": "The Chinese"
+            "a": "Tools and weapons made from bronze",
+            "b": "Machines powered by electricity",
+            "c": "Weapons made from stainless steel",
+            "d": "Tools made only from stone"
           },
           "answer": "a"
         },
         {
           "id": "H3Q6",
-          "q": "Main reason for searching the Northwest Passage?",
+          "q": "Around when did the Bronze Age begin in Mesopotamia?",
           "choices": {
-            "a": "To locate a new trade route",
-            "b": "To spread religion",
-            "c": "To find gold in Florida",
-            "d": "To map Antarctica"
+            "a": "10,000 BC",
+            "b": "900 BC",
+            "c": "2900 BC",
+            "d": "AD 2900"
           },
-          "answer": "a"
+          "answer": "c"
         },
         {
           "id": "H3Q7",
-          "q": "The Norse had a colony on what part of the Americas for ~500 years?",
+          "q": "Which major period followed the Bronze Age in many regions?",
           "choices": {
-            "a": "Greenland",
-            "b": "Hudson Bay",
-            "c": "Newfoundland",
-            "d": "Baffin Island"
+            "a": "The Paleolithic Age",
+            "b": "The Ice Age",
+            "c": "The Digital Age",
+            "d": "The Iron Age"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H3Q8",
-          "q": "Leif Ericson was?",
+          "q": "What technology characterizes the Iron Age?",
           "choices": {
-            "a": "A Norse explorer credited as first European to land in North America",
-            "b": "A Spanish conquistador",
-            "c": "A Portuguese cartographer",
-            "d": "An English privateer"
+            "a": "Widespread iron tools and weapons",
+            "b": "The invention of agriculture",
+            "c": "The use of only copper tools",
+            "d": "The first use of clay pottery"
           },
           "answer": "a"
         },
         {
           "id": "H3Q9",
-          "q": "Who crossed the Isthmus of Panama to the Pacific in 1513?",
+          "q": "Which two civilizations are most closely associated with classical antiquity?",
           "choices": {
-            "a": "Vasco N\u00fa\u00f1ez de Balboa",
-            "b": "Hern\u00e1n Cort\u00e9s",
-            "c": "Francisco Pizarro",
-            "d": "Ferdinand Magellan"
+            "a": "Egypt and Kush",
+            "b": "Greece and Rome",
+            "c": "Maya and Aztec",
+            "d": "India and China"
+          },
+          "answer": "b"
+        },
+        {
+          "id": "H3Q10",
+          "q": "Alexander the Great was king of which ancient kingdom?",
+          "choices": {
+            "a": "Persia",
+            "b": "Egypt",
+            "c": "Rome",
+            "d": "Macedonia"
+          },
+          "answer": "d"
+        },
+        {
+          "id": "H3Q11",
+          "q": "What title is often used for Mesopotamia because of its early cities and writing?",
+          "choices": {
+            "a": "The Gift of the Nile",
+            "b": "The New World",
+            "c": "The Eternal City",
+            "d": "The Cradle of Civilization"
+          },
+          "answer": "d"
+        },
+        {
+          "id": "H3Q12",
+          "q": "Which two rivers flowed through Mesopotamia?",
+          "choices": {
+            "a": "Indus and Ganges",
+            "b": "Nile and Congo",
+            "c": "Tigris and Euphrates",
+            "d": "Yellow and Yangtze"
+          },
+          "answer": "c"
+        },
+        {
+          "id": "H3Q13",
+          "q": "Around when did ancient Egypt become unified as an early kingdom?",
+          "choices": {
+            "a": "3150 BC",
+            "b": "10,000 BC",
+            "c": "AD 3150",
+            "d": "500 BC"
           },
           "answer": "a"
         },
         {
-          "id": "H3Q10",
-          "q": "First expedition to cross the western portion of the U.S. in 1804?",
+          "id": "H3Q14",
+          "q": "During which period did ancient Egypt reach a height of imperial power?",
           "choices": {
-            "a": "Lewis and Clark Expedition",
-            "b": "Pike Expedition",
-            "c": "Fremont Expedition",
-            "d": "Coronado Expedition"
+            "a": "The Middle Kingdom",
+            "b": "The Ptolemaic period",
+            "c": "The Old Kingdom",
+            "d": "The New Kingdom"
+          },
+          "answer": "d"
+        },
+        {
+          "id": "H3Q15",
+          "q": "Ancient Egypt's success depended greatly on adapting to which river?",
+          "choices": {
+            "a": "The Euphrates",
+            "b": "The Indus",
+            "c": "The Nile",
+            "d": "The Tiber"
+          },
+          "answer": "c"
+        },
+        {
+          "id": "H3Q16",
+          "q": "The Western Roman Empire fell near the end of which century?",
+          "choices": {
+            "a": "The fifth century AD",
+            "b": "The fifteenth century AD",
+            "c": "The tenth century AD",
+            "d": "The first century BC"
           },
           "answer": "a"
+        },
+        {
+          "id": "H3Q17",
+          "q": "Who were the Mound Builders of North America?",
+          "choices": {
+            "a": "Nomads who left no permanent structures",
+            "b": "European settlers who built castles",
+            "c": "Different Indigenous cultures that built earthen mounds",
+            "d": "A single Roman colony"
+          },
+          "answer": "c"
         }
       ]
     },
     {
       "week": 4,
-      "title": "American Indians and Settlers",
+      "title": "From the Paleolithic Era to the Agricultural Revolution",
       "questions": [
         {
           "id": "H4Q1",
-          "q": "The American Indian Wars were conflicts that lasted until about?",
+          "q": "Approximately when did the Middle Paleolithic period begin?",
           "choices": {
-            "a": "1890",
-            "b": "1776",
-            "c": "1918",
-            "d": "1865"
+            "a": "20,000 years ago",
+            "b": "About 200,000 years ago",
+            "c": "2,000 years ago",
+            "d": "2 million years ago"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H4Q2",
-          "q": "The conflicts arose because?",
+          "q": "On which continent did Homo sapiens first evolve?",
           "choices": {
-            "a": "European settlers continued to expand westward",
-            "b": "Spanish traded peacefully",
-            "c": "No settlers moved west",
-            "d": "Treaties were always honored"
+            "a": "North America",
+            "b": "Australia",
+            "c": "Europe",
+            "d": "Africa"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H4Q3",
-          "q": "Conflicts were spurred by ideologies such as?",
+          "q": "What technological development helped bring the Stone Age to an end in different regions?",
           "choices": {
-            "a": "Manifest Destiny",
-            "b": "Isolationism",
-            "c": "Mercantilism",
-            "d": "Federalism"
+            "a": "Electricity",
+            "b": "Printing",
+            "c": "Metalworking",
+            "d": "Steam power"
           },
-          "answer": "a"
+          "answer": "c"
         },
         {
           "id": "H4Q4",
-          "q": "Some Indian tribes fought alongside the U.S. against the British during the?",
+          "q": "How old are some of the earliest proposed stone-tool cut marks found in Ethiopia?",
           "choices": {
-            "a": "American Revolution",
-            "b": "War of 1812",
-            "c": "Civil War",
-            "d": "Mexican-American War"
+            "a": "About 3.4 million years",
+            "b": "About 340,000 years",
+            "c": "About 34 million years",
+            "d": "About 34,000 years"
           },
           "answer": "a"
         },
         {
           "id": "H4Q5",
-          "q": "The Battle of Little Bighorn is commonly referred to as?",
+          "q": "Which named age followed the Stone Age in many civilizations?",
           "choices": {
-            "a": "Custer\u2019s Last Stand",
-            "b": "The Long Walk",
-            "c": "Trail of Tears",
-            "d": "Battle of Tippecanoe"
+            "a": "The Modern Age",
+            "b": "The Space Age",
+            "c": "The Bronze Age",
+            "d": "The Classical Age"
           },
-          "answer": "a"
+          "answer": "c"
         },
         {
           "id": "H4Q6",
-          "q": "Hunkpapa Lakota holy man with a vision about Little Bighorn?",
+          "q": "Which alloy became especially important for early tools and weapons after stone?",
           "choices": {
-            "a": "Sitting Bull",
-            "b": "Crazy Horse",
-            "c": "Red Cloud",
-            "d": "Tecumseh"
+            "a": "Titanium",
+            "b": "Aluminum",
+            "c": "Stainless steel",
+            "d": "Bronze"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H4Q7",
-          "q": "The Great Sioux War took place under the presidencies of?",
+          "q": "What term describes paintings made on cave walls and ceilings?",
           "choices": {
-            "a": "Ulysses S. Grant and Rutherford B. Hayes",
-            "b": "Lincoln and Johnson",
-            "c": "Monroe and Adams",
-            "d": "Cleveland and McKinley"
+            "a": "Calligraphy",
+            "b": "Cuneiform",
+            "c": "Mosaics",
+            "d": "Cave art"
           },
-          "answer": "a"
+          "answer": "d"
         },
         {
           "id": "H4Q8",
-          "q": "The Nez Perce War started because?",
+          "q": "Around when did the Bronze Age begin in Mesopotamia?",
           "choices": {
-            "a": "Several bands did not want to give up ancestral lands and move to a reservation",
-            "b": "A dispute over fur prices",
-            "c": "A dispute about gold taxes",
-            "d": "A naval blockade"
+            "a": "Around 2900 BC",
+            "b": "Around 29,000 BC",
+            "c": "Around AD 2900",
+            "d": "Around 290 BC"
           },
           "answer": "a"
         },
         {
           "id": "H4Q9",
-          "q": "Which Great Basin tribe was severely impacted and moved to Utah?",
+          "q": "Along with Egypt and Mesopotamia, which was another major early river-valley civilization?",
           "choices": {
-            "a": "Shoshone",
-            "b": "Cherokee",
-            "c": "Iroquois",
-            "d": "Apache"
+            "a": "The Inca civilization",
+            "b": "The Indus Valley civilization",
+            "c": "The Roman civilization",
+            "d": "The Viking civilization"
           },
-          "answer": "a"
+          "answer": "b"
         },
         {
           "id": "H4Q10",
-          "q": "In what year did the last conflicts with the Indians occur?",
+          "q": "During which period did agriculture first become widespread, long before the Bronze Age?",
           "choices": {
-            "a": "1924",
-            "b": "1890",
-            "c": "1901",
-            "d": "1933"
+            "a": "The Middle Ages",
+            "b": "The Iron Age",
+            "c": "Classical antiquity",
+            "d": "The Neolithic period"
           },
-          "answer": "a"
-        }
-      ]
-    },
-    {
-      "week": 5,
-      "title": "Political, Social, Religious & Economic of Colonial Era",
-      "questions": [
-        {
-          "id": "H5Q1",
-          "q": "The Thirteen Colonies were?",
-          "choices": {
-            "a": "British Colonies",
-            "b": "Spanish Colonies",
-            "c": "Dutch Protectorates",
-            "d": "Independent kingdoms"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H5Q2",
-          "q": "Continental Congress declared independence from Great Britain in?",
-          "choices": {
-            "a": "1776",
-            "b": "1789",
-            "c": "1754",
-            "d": "1812"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H5Q3",
-          "q": "Each of the thirteen colonies developed its own system of?",
-          "choices": {
-            "a": "Self-government",
-            "b": "Royal dictatorship",
-            "c": "Direct democracy for all",
-            "d": "Military rule"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H5Q4",
-          "q": "After protests in the 1760s\u20131770s, these colonies united and fought?",
-          "choices": {
-            "a": "The American Revolutionary War",
-            "b": "The French and Indian War",
-            "c": "The War of 1812",
-            "d": "King Philip\u2019s War"
-          },
-          "answer": "a"
-        }
-      ]
-    },
-    {
-      "week": 6,
-      "title": "American Revolution",
-      "questions": [
-        {
-          "id": "H6Q1",
-          "q": "When did the American Revolutionary War take place?",
-          "choices": {
-            "a": "1775 to 1783",
-            "b": "1754 to 1763",
-            "c": "1812 to 1815",
-            "d": "1861 to 1865"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q2",
-          "q": "Who did the thirteen colonies fight against?",
-          "choices": {
-            "a": "The British",
-            "b": "The French",
-            "c": "The Spanish",
-            "d": "The Dutch"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q3",
-          "q": "The Boston Tea Party was?",
-          "choices": {
-            "a": "Political protest about taxation without representation",
-            "b": "A peace summit",
-            "c": "A royal celebration",
-            "d": "A trade agreement"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q4",
-          "q": "Commander in Chief of the Continental Army?",
-          "choices": {
-            "a": "George Washington",
-            "b": "Thomas Jefferson",
-            "c": "John Adams",
-            "d": "Benedict Arnold"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q5",
-          "q": "Congress declared independence in?",
-          "choices": {
-            "a": "July 1776",
-            "b": "May 1775",
-            "c": "March 1781",
-            "d": "September 1787"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q6",
-          "q": "Why did colonists reject British taxes?",
-          "choices": {
-            "a": "They had no representation by the government",
-            "b": "Taxes were too small",
-            "c": "They preferred bartering",
-            "d": "They were exempt as farmers"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q7",
-          "q": "Who were loyalists?",
-          "choices": {
-            "a": "Colonists that were loyal to Britain",
-            "b": "Colonists who supported France",
-            "c": "Native allies",
-            "d": "Privateers"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q8",
-          "q": "Patriots supported which political philosophy?",
-          "choices": {
-            "a": "Republicanism",
-            "b": "Monarchism",
-            "c": "Communalism",
-            "d": "Theocracy"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q9",
-          "q": "Who rode at night alerting colonists that British troops were coming?",
-          "choices": {
-            "a": "Paul Revere",
-            "b": "Nathan Hale",
-            "c": "Ethan Allen",
-            "d": "Francis Marion"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H6Q10",
-          "q": "Document signed Aug. 2, 1776 declaring independence?",
-          "choices": {
-            "a": "The United States Declaration of Independence",
-            "b": "Treaty of Paris (1783)",
-            "c": "Articles of Confederation",
-            "d": "Olive Branch Petition"
-          },
-          "answer": "a"
-        }
-      ]
-    },
-    {
-      "week": 7,
-      "title": "Development of the Constitution",
-      "questions": [
-        {
-          "id": "H7Q1",
-          "q": "Where was the Constitutional Convention held?",
-          "choices": {
-            "a": "Philadelphia, Pennsylvania",
-            "b": "Boston, Massachusetts",
-            "c": "Richmond, Virginia",
-            "d": "New York, New York"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q2",
-          "q": "What was the document the Convention created?",
-          "choices": {
-            "a": "The United States Constitution",
-            "b": "Magna Carta",
-            "c": "Mayflower Compact",
-            "d": "Treaty of Paris"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q3",
-          "q": "What plan did large states support for representation?",
-          "choices": {
-            "a": "The Virginia Plan",
-            "b": "The New Jersey Plan",
-            "c": "The Albany Plan",
-            "d": "The Missouri Plan"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q4",
-          "q": "After debate, the final version was voted and sent to?",
-          "choices": {
-            "a": "The States",
-            "b": "The British Parliament",
-            "c": "The Supreme Court",
-            "d": "The President"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q5",
-          "q": "About how many people lived in the 13 colonies at the time?",
-          "choices": {
-            "a": "4 million",
-            "b": "1 million",
-            "c": "10 million",
-            "d": "500,000"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q6",
-          "q": "Problems under the Articles included?",
-          "choices": {
-            "a": "Trade, currency, and collecting taxes",
-            "b": "Too strong federal courts",
-            "c": "Excessive presidential power",
-            "d": "Over-taxation of imports only"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q7",
-          "q": "Who was elected unanimously as President of the Convention?",
-          "choices": {
-            "a": "George Washington",
-            "b": "Benjamin Franklin",
-            "c": "James Madison",
-            "d": "Alexander Hamilton"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H7Q8",
-          "q": "George Mason demanded what before signing?",
-          "choices": {
-            "a": "A Bill of Rights",
-            "b": "A monarchy",
-            "c": "A national church",
-            "d": "No federal courts"
-          },
-          "answer": "a"
-        }
-      ]
-    },
-    {
-      "week": 8,
-      "title": "Immigration and Settlement (1789\u20131800)",
-      "questions": [
-        {
-          "id": "H8Q1",
-          "q": "The largest group of immigrants into the United States were?",
-          "choices": {
-            "a": "German",
-            "b": "Italian",
-            "c": "Chinese",
-            "d": "Swedish"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H8Q2",
-          "q": "Immigrants came to the U.S. by?",
-          "choices": {
-            "a": "Ship",
-            "b": "Rail",
-            "c": "Airplane",
-            "d": "Caravan"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H8Q3",
-          "q": "Most immigrants came to America for?",
-          "choices": {
-            "a": "All of the above (freedom, jobs, land, opportunity)",
-            "b": "Sports",
-            "c": "Royal service",
-            "d": "Mandatory conscription"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H8Q4",
-          "q": "The gateway for millions of immigrants to the United States was?",
-          "choices": {
-            "a": "Ellis Island",
-            "b": "Angel Island",
-            "c": "Plymouth Rock",
-            "d": "Jamestown"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H8Q5",
-          "q": "Who immigrated to the U.S. in greater numbers?",
-          "choices": {
-            "a": "Men",
-            "b": "Women",
-            "c": "Children",
-            "d": "Elders"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H8Q6",
-          "q": "Most Irish came to America because of?",
-          "choices": {
-            "a": "Famine or food shortage",
-            "b": "Religious crusades",
-            "c": "Gold rush",
-            "d": "Military draft"
-          },
-          "answer": "a"
-        },
-        {
-          "id": "H8Q7",
-          "q": "One problem in American cities caused by immigration was?",
-          "choices": {
-            "a": "Rapid population growth (overcrowding)",
-            "b": "Too many empty houses",
-            "c": "Decline in trade",
-            "d": "Lack of workers"
-          },
-          "answer": "a"
+          "answer": "d"
         }
       ]
     }
